@@ -10,9 +10,9 @@ export class ChatGPTTransactionEligibilityEstimator {
 
   constructor() {
     // Hardcoded Azure OpenAI details for toy project, not for production use, would be replaced with environment variables in a real application
-    const apiKey = "C5JOUi6vdVgBsAdR1MjNtsbIQRe86k5p6cxgud1dr67mtnqWzPXnJQQJ99ALAC4f1cMXJ3w3AAABACOG40L4";  // Note this key will be rotated in 5 days
-    const endpoint = 'https://revidera-openai.openai.azure.com/';
-    const deployment = 'o4-mini';
+    const apiKey = "KEY REMOVED";  // Note this key will be rotated in 5 days
+    const endpoint = 'HOSTNAME UNDETERMINED/';
+    const deployment = 'MODEL NAME UNDETERMINED'; // Replace with the actual deployment name of the o4-mini reasoning model
     const apiVersion = '2024-12-01-preview';
     this.openai = new AzureOpenAI({ apiKey, endpoint, deployment, apiVersion });
     this.deployment = deployment;
